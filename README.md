@@ -16,6 +16,7 @@ Template project for [p5.js](https://p5js.org/) sketches using [TypeScript](http
 ### Recommended
 
 - [Visual Studio Code](https://code.visualstudio.com/): Code editor
+- [git](https://git-scm.com/): Version control system
 - [pnpm](https://pnpm.js.org/): Package manager
 
 ### Optional
