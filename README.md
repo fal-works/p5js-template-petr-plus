@@ -2,6 +2,8 @@
 
 Template project for [p5.js](https://p5js.org/) sketches using [TypeScript](https://www.typescriptlang.org/) and other typical tools.
 
+Works on [p5.js instance mode](https://github.com/processing/p5.js/wiki/Global-and-instance-mode).
+
 ## Tools/libraries that we will use
 
 ### Important
@@ -15,9 +17,10 @@ Template project for [p5.js](https://p5js.org/) sketches using [TypeScript](http
 
 ### Recommended
 
+- [Scoop](https://scoop.sh/) (Windows) / [Homebrew](https://brew.sh/) (Mac, Linux): General package manager
 - [Visual Studio Code](https://code.visualstudio.com/): Code editor
 - [git](https://git-scm.com/): Version control system
-- [pnpm](https://pnpm.js.org/): Package manager
+- [pnpm](https://pnpm.js.org/): JavaScript Package manager
 
 ### Optional
 
