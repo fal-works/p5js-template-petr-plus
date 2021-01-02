@@ -17,9 +17,10 @@
   "license": "CC0-1.0",
   "private": true,
   "scripts": {
-    "build": "run-s transpile bundle format-build",
-    "format-build": "prettier --write dist/sketch.js",
+    "build": "run-s transpile bundle format:dist lint:dist minify",
     "bundle": "rollup --config",
+    "format:dist": "prettier --write dist/sketch.js",
+    "lint:dist": "eslint --fix dist/sketch.js",
     "minify": "terser dist/sketch.js --output dist/sketch.min.js",
     "transpile": "tsc --skipLibCheck"
   }

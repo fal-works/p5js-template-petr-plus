@@ -1,0 +1,7 @@
+/out/
+*.min.js
+*.md
+pnpm-lock.yaml
+LICENSE
+.gitignore
+.prettierignore

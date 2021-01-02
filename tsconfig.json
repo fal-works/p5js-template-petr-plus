@@ -10,7 +10,5 @@
     "noImplicitReturns": true,
     "newLine": "LF"
   },
-  "include": [
-    "./src/**/*.ts"
-  ]
+  "include": ["./src/**/*.ts"]
 }
