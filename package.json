@@ -17,10 +17,10 @@
   "license": "CC0-1.0",
   "private": true,
   "scripts": {
-    "build": "run-s tsc rollup format-build",
+    "build": "run-s transpile bundle format-build",
     "format-build": "prettier --write dist/sketch.js",
-    "rollup": "rollup --config",
-    "terser": "terser dist/sketch.js --output dist/sketch.min.js",
-    "tsc": "tsc --skipLibCheck"
+    "bundle": "rollup --config",
+    "minify": "terser dist/sketch.js --output dist/sketch.min.js",
+    "transpile": "tsc --skipLibCheck"
   }
 }
