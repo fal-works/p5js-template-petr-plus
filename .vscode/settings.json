@@ -1,0 +1,14 @@
+{
+  "files.eol": "\n",
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      80
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+}
