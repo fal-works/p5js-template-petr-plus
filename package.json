@@ -22,6 +22,9 @@
     "format:dist": "prettier --write dist/sketch.js",
     "lint:dist": "eslint --fix dist/sketch.js",
     "minify": "terser dist/sketch.js --output dist/sketch.min.js",
-    "transpile": "tsc --skipLibCheck"
+    "transpile": "tsc --skipLibCheck",
+    "vscode": "run-s vscode:*",
+    "vscode:eslint": "code --install-extension dbaeumer.vscode-eslint",
+    "vscode:prettier": "code --install-extension esbenp.prettier-vscode"
   }
 }

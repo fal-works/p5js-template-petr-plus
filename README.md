@@ -18,8 +18,10 @@ Works on [p5.js instance mode](https://github.com/processing/p5.js/wiki/Global-a
 ### Recommended
 
 - [Scoop](https://scoop.sh/) (Windows) / [Homebrew](https://brew.sh/) (Mac, Linux): General package manager
-- [Visual Studio Code](https://code.visualstudio.com/): Code editor
 - [git](https://git-scm.com/): Version control system
+- [Visual Studio Code](https://code.visualstudio.com/): Code editor
+  - [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Extension that automatically runs [eslint](https://eslint.org/) on Visual Studio Code
+  - [prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Extension that automatically runs [prettier](https://prettier.io/) on Visual Studio Code
 - [pnpm](https://pnpm.js.org/): JavaScript Package manager
 
 ### Optional
