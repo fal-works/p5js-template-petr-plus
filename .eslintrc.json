@@ -5,7 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "ignorePatterns": [
     "*.min.js",
@@ -21,7 +21,6 @@
         "src/**/*.ts"
       ],
       "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier/@typescript-eslint"
       ],
