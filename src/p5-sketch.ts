@@ -1,22 +1,22 @@
 import p5 from "p5";
 
 /** Function that should be called by `p5` on any keyboard event. */
-export type KeyboardEventCallback =
+type KeyboardEventCallback =
   | ((event?: KeyboardEvent) => void)
   | ((event?: KeyboardEvent) => boolean);
 
 /** Function that should be called by `p5` on any mouse event. */
-export type MouseEventCallback =
+type MouseEventCallback =
   | ((event?: MouseEvent) => void)
   | ((event?: MouseEvent) => boolean);
 
 /** Function that should be called by `p5` on any touch event. */
-export type TouchEventCallback =
+type TouchEventCallback =
   | ((event?: TouchEvent) => void)
   | ((event?: TouchEvent) => boolean);
 
 /** Methods of `p5` that may be overwritten in `new p5()`. */
-export type P5Methods = {
+type P5Methods = {
   preload: () => void;
   setup: () => void;
   draw: () => void;
