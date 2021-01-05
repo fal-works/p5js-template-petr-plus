@@ -4,9 +4,6 @@
   },
   "extends": ["eslint:recommended", "prettier"],
   "ignorePatterns": ["/out/", "*.min.js"],
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
   "overrides": [
     {
       "files": ["src/**/*.ts"],
@@ -19,7 +16,8 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 6
       },
       "plugins": ["@typescript-eslint"],
       "rules": {
@@ -33,6 +31,12 @@
       },
       "rules": {
         "lines-around-comment": "error"
+      }
+    },
+    {
+      "files": ["rollup.config.js"],
+      "parserOptions": {
+        "sourceType": "module"
       }
     }
   ]
