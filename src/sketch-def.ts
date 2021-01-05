@@ -1,4 +1,5 @@
 import p5 from "p5";
+import type { SketchDefinition } from "./p5-sketch-util";
 
 /** This is a setup function. */
 const setup = (p: p5): void => {
@@ -17,8 +18,8 @@ const draw = (p: p5): void => {
   p.circle(p.width / 2, p.height / 2, diameter);
 };
 
-/** Functions to be passed to `createSketch()`. */
-export const methods = {
+/** Parameters be passed to `createSketch()`. */
+export const sketchDefinition: SketchDefinition = {
   setup,
   draw,
 };
