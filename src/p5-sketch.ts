@@ -1,13 +1,16 @@
 import p5 from "p5";
 
+/** Function that should be called by `p5` on any keyboard event. */
 export type KeyboardEventCallback =
   | ((event?: KeyboardEvent) => void)
   | ((event?: KeyboardEvent) => boolean);
 
+/** Function that should be called by `p5` on any mouse event. */
 export type MouseEventCallback =
   | ((event?: MouseEvent) => void)
   | ((event?: MouseEvent) => boolean);
 
+/** Function that should be called by `p5` on any touch event. */
 export type TouchEventCallback =
   | ((event?: TouchEvent) => void)
   | ((event?: TouchEvent) => boolean);
