@@ -62,7 +62,20 @@ export type P5Sketch = (p: p5) => void;
 
 /**
  * Creates a new `P5Sketch` object to be passed to `new p5()`.
- * @param methods Functions (e.g. `setup`) to be assigned to `p5` instance.
+ *
+ * `methods` should be a set of `p5` methods with a `p5` instance added as the
+ * first argument, e.g.:
+ *
+ * ```js
+ * {
+ *   setup: (p) => {
+ *     p.createCanvas(400, 400);
+ *   },
+ *   draw: (p) => {
+ *     p.background(220);
+ *   }
+ * }
+ * ```
  */
 export const createSketch = (methods: P5UnboundMethods): P5Sketch => (p) => {
   const methodNames = Object.keys(methods) as (keyof P5UnboundMethods)[];
