@@ -1,7 +1,8 @@
 // See also: https://rollupjs.org/
 
 const banner = `/**
- * This is a minimum project for testing module bundlers.
+ * This is a template project for p5.js sketches
+ * using TypeScript and other typical tools.
  *
  * @license CC0-1.0
  */
