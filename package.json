@@ -22,7 +22,7 @@
     "bundle": "rollup --config",
     "lint:dist": "eslint --fix dist/sketch.js",
     "format:dist": "prettier --write dist/sketch.js",
-    "minify": "terser dist/sketch.js --output dist/sketch.min.js",
+    "minify": "terser dist/sketch.js --output dist/sketch.min.js --source-map",
     "vscode": "run-s vscode:*",
     "vscode:eslint": "code --install-extension dbaeumer.vscode-eslint",
     "vscode:prettier": "code --install-extension esbenp.prettier-vscode"
