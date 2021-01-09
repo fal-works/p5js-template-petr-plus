@@ -1,15 +1,24 @@
 {
   "compilerOptions": {
-    "outDir": "./out",
-    "moduleResolution": "node",
+    // emitting JS files
+    "outDir": "out",
+    "noEmitOnError": true,
+
+    // output kind
     "target": "ES2015",
     "module": "ES2015",
-    "noEmitOnError": true,
+
+    // handling source modules
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+
+    // checking syntax
     "strict": true,
     "noImplicitReturns": true,
-    "newLine": "LF",
-    "isolatedModules": true
+
+    // formatting
+    "newLine": "LF"
   },
   "include": ["./src/**/*.ts"]
 }
