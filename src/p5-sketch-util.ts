@@ -72,9 +72,13 @@ export type SketchDefinition = {
 /** Type of `createSketch`. */
 type CreateSketchFunction = (definition: SketchDefinition) => Sketch;
 
+/** Calls `Object.keys()` with type assertion in TypeScript. */
+const getObjectKeys = <T extends Record<string, unknown>>(object: T) =>
+  Object.keys(object) as (keyof T)[];
+
 /** Creates a function object to be passed to `new p5()`. */
 export const createSketch: CreateSketchFunction = (definition) => (p) => {
-  const methodNames = Object.keys(definition) as (keyof SketchDefinition)[];
+  const methodNames = getObjectKeys(definition);
 
   for (const methodName of methodNames) {
     const method = definition[methodName];
