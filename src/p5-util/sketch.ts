@@ -24,13 +24,10 @@ export type SketchDef = {
   ) => ReturnType<P5WritableMethods[T]>;
 };
 
-/** Calls `Object.keys()` with type assertion in TypeScript. */
-const getObjectKeys = <T extends Record<string, unknown>>(object: T) =>
-  Object.keys(object) as (keyof T)[];
-
 /** Creates a function object to be passed to `new p5()`. */
 export const createSketch = (definition: SketchDef): Sketch => {
-  const methodNames = getObjectKeys(definition);
+  const methodNames = Object.keys(definition) as (keyof SketchDef)[];
+
   return (p) => {
     methodNames.forEach((methodName) => {
       const method = definition[methodName];
