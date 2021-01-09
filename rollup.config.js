@@ -10,7 +10,7 @@ const banner = `/**
 const config = {
   input: "out/main.js",
   output: {
-    file: "dist/sketch.js",
+    file: "dist/main.js",
     format: "iife",
     banner,
     globals: {
