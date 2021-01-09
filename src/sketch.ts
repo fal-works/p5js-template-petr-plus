@@ -1,8 +1,7 @@
-import p5 from "p5";
-import type { SketchDefinition } from "./p5-sketch-util";
+import { createSketch, SketchDef } from "./p5-util/sketch";
 
 /** This is a setup function. */
-const setup = (p: p5): void => {
+const setup: SketchDef["setup"] = (p) => {
   p.createCanvas(640, 480);
 
   p.noFill();
@@ -11,15 +10,15 @@ const setup = (p: p5): void => {
 };
 
 /** This is a draw function. */
-const draw = (p: p5): void => {
+const draw: SketchDef["draw"] = (p) => {
   p.background(240);
 
   const diameter = 360 + Math.sin(0.1 * p.frameCount) * 40;
   p.circle(p.width / 2, p.height / 2, diameter);
 };
 
-/** Parameters be passed to `createSketch()`. */
-export const sketchDefinition: SketchDefinition = {
+/** Object to be passed to `new p5()`. */
+export const sketch = createSketch({
   setup,
   draw,
-};
+});

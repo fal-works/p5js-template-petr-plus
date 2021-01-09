@@ -1,5 +1,4 @@
 import p5 from "p5";
-import { createSketch } from "./p5-sketch-util";
-import { sketchDefinition } from "./sketch-def";
+import { sketch } from "./sketch";
 
-new p5(createSketch(sketchDefinition));
+new p5(sketch);
