@@ -8,7 +8,7 @@ const banner = `/**
 `;
 
 const config = {
-  input: "out/index.js",
+  input: "out/main.js",
   output: {
     file: "dist/sketch.js",
     format: "iife",
