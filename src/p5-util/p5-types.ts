@@ -1,23 +1,17 @@
 /**
- * Function that should be called by `p5` on any keyboard event.
+ * Function that may be called on any keyboard event.
  */
-type KeyboardEventCallback =
-  | ((event?: KeyboardEvent) => void)
-  | ((event?: KeyboardEvent) => boolean);
+type KeyboardEventCallback = (event?: KeyboardEvent) => void | boolean;
 
 /**
- * Function that should be called by `p5` on any mouse event.
+ * Function that may be called on any mouse event.
  */
-type MouseEventCallback =
-  | ((event?: MouseEvent) => void)
-  | ((event?: MouseEvent) => boolean);
+type MouseEventCallback = (event?: MouseEvent) => void | boolean;
 
 /**
- * Function that should be called by `p5` on any touch event.
+ * Function that may be called on any touch event.
  */
-type TouchEventCallback =
-  | ((event?: TouchEvent) => void)
-  | ((event?: TouchEvent) => boolean);
+type TouchEventCallback = (event?: TouchEvent) => void | boolean;
 
 /**
  * Methods of `p5` that may be overwritten in `new p5()`.
