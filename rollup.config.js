@@ -8,7 +8,7 @@ const banner = `/**
 `;
 
 const config = {
-  input: "out/main.js",
+  input: "tsc-out/main.js",
   output: {
     file: "dist/main.js",
     format: "iife",
