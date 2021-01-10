@@ -1,16 +1,13 @@
-/**
- * Function that may be called on any keyboard event.
- */
+/** Function that may be called on any UI event. */
+type UIEventCallback = (event?: UIEvent) => void | boolean;
+
+/** Function that may be called on any keyboard event. */
 type KeyboardEventCallback = (event?: KeyboardEvent) => void | boolean;
 
-/**
- * Function that may be called on any mouse event.
- */
+/** Function that may be called on any mouse event. */
 type MouseEventCallback = (event?: MouseEvent) => void | boolean;
 
-/**
- * Function that may be called on any touch event.
- */
+/** Function that may be called on any touch event. */
 type TouchEventCallback = (event?: TouchEvent) => void | boolean;
 
 /**
@@ -20,6 +17,8 @@ export type P5WritableMethods = {
   preload: () => void;
   setup: () => void;
   draw: () => void;
+
+  windowResized: UIEventCallback;
 
   keyPressed: KeyboardEventCallback;
   keyReleased: KeyboardEventCallback;
@@ -36,4 +35,8 @@ export type P5WritableMethods = {
   touchStarted: TouchEventCallback;
   touchMoved: TouchEventCallback;
   touchEnded: TouchEventCallback;
+
+  deviceMoved: () => void;
+  deviceTurned: () => void;
+  deviceShaken: () => void;
 };
