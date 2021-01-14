@@ -1,7 +1,4 @@
 {
-  "name": "p5-ts-template",
-  "description": "Template project for p5.js sketches using TypeScript and other typical tools.",
-  "version": "0.1.0",
   "license": "CC0-1.0",
   "devDependencies": {
     "@types/p5": "^0.9.1",

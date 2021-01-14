@@ -1,6 +1,3 @@
-/** Function that may be called on any UI event. */
-type UIEventCallback = (event?: UIEvent) => void | boolean;
-
 /** Function that may be called on any keyboard event. */
 type KeyboardEventCallback = (event?: KeyboardEvent) => void | boolean;
 
@@ -18,7 +15,7 @@ export type P5WritableMethods = {
   setup: () => void;
   draw: () => void;
 
-  windowResized: UIEventCallback;
+  windowResized: (event?: Event) => void;
 
   keyPressed: KeyboardEventCallback;
   keyReleased: KeyboardEventCallback;
