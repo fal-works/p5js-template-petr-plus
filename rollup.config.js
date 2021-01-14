@@ -1,7 +1,7 @@
 // See also: https://rollupjs.org/
 
 const banner = `/**
- * This is a p5.js sketch made with p5-ts-template.
+ * This is a p5.js sketch made with p5js-template-petr-plus.
  *
  * @license CC0-1.0
  */
