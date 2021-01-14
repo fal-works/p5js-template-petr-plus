@@ -13,9 +13,7 @@ const config = {
     file: "dist/main.js",
     format: "iife",
     banner,
-    globals: {
-      p5: "p5",
-    },
+    globals: { p5: "p5" },
     interop: "default",
   },
   external: ["p5"],

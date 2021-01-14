@@ -30,5 +30,11 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features",
     "files.insertFinalNewline": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true
   }
 }
