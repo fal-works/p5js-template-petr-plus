@@ -1,4 +1,3 @@
 node_modules/
 /tsc-out/
 /dist/*.js
-/dist/*.js.map
