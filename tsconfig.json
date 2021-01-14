@@ -1,4 +1,6 @@
 {
+  "include": ["src"],
+
   "compilerOptions": {
     // emitting JS files
     "outDir": "tsc-out",
@@ -6,10 +8,9 @@
 
     // output kind
     "target": "ES2015",
-    "module": "ES2015",
+    "module": "ESNext",
 
     // handling source modules
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
 
@@ -19,6 +20,5 @@
 
     // formatting
     "newLine": "LF"
-  },
-  "include": ["./src/**/*.ts"]
+  }
 }

@@ -1,5 +1,6 @@
 {
   "ignorePatterns": ["/tsc-out/", "*.min.js"],
+
   "env": {
     "es6": true,
     "browser": true
@@ -8,18 +9,19 @@
     "sourceType": "module"
   },
   "extends": ["eslint:recommended", "prettier"],
+
   "overrides": [
     {
       "files": ["src/**/*.ts"],
-      "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint"
-      ],
+      "plugins": ["@typescript-eslint"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 6
       },
-      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+      ],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off"
       }
@@ -36,7 +38,6 @@
     {
       "files": ["rollup.config.js"],
       "env": {
-        "es6": true,
         "node": true,
         "browser": false
       }
