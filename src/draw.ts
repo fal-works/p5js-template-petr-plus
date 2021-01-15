@@ -1,6 +1,6 @@
-import type { SketchDef } from "./p5-util/sketch";
+import type p5 from "p5";
 
 /** This is a draw function. */
-export const draw: SketchDef["draw"] = (p) => {
+export const draw = (p: p5): void => {
   p.background(220);
 };
