@@ -17,8 +17,8 @@
     "build": "run-s transpile bundle lint:dist format:dist minify",
     "transpile": "tsc --skipLibCheck",
     "bundle": "rollup --config",
-    "lint:dist": "eslint --fix dist/main.js",
-    "format:dist": "prettier --write dist/main.js",
-    "minify": "terser dist/main.js --output dist/main.min.js --compress --mangle"
+    "lint:dist": "eslint --fix dist/script.js",
+    "format:dist": "prettier --write dist/script.js",
+    "minify": "terser dist/script.js --output dist/script.min.js --compress --mangle"
   }
 }

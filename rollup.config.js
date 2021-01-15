@@ -10,7 +10,7 @@ const banner = `/**
 const config = {
   input: "tsc-out/main.js",
   output: {
-    file: "dist/main.js",
+    file: "dist/script.js",
     format: "iife",
     banner,
     globals: { p5: "p5" },
