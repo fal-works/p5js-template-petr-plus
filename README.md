@@ -2,6 +2,8 @@
 
 Template project for [p5.js](https://p5js.org/) sketches using [TypeScript](https://www.typescriptlang.org/) and other typical tools.
 
+See also [other templates](https://fal-works.github.io/p5js-templates/).
+
 
 ## Differences from [Template PETR](https://github.com/fal-works/p5js-template-petr)
 
