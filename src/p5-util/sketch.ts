@@ -1,5 +1,5 @@
-import p5 from "p5";
-import { P5WritableMethods } from "./p5-types";
+import type p5 from "p5";
+import type { P5WritableMethods } from "./p5-types";
 
 /**
  * Function object to be passed to `new p5()`.
