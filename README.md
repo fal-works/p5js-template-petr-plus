@@ -1,5 +1,9 @@
 # p5.js Template PETR+
 
+*Other languages (wiki):* [[ ja ]](https://github.com/fal-works/p5js-template-petr-plus/wiki/Readme-ja)
+
+## About
+
 Template project for [p5.js](https://p5js.org/) sketches using [TypeScript](https://www.typescriptlang.org/) and other typical tools.
 
 See also [other templates](https://fal-works.github.io/p5js-templates/).
@@ -8,6 +12,9 @@ See also [other templates](https://fal-works.github.io/p5js-templates/).
 ## Differences from [Template PETR](https://github.com/fal-works/p5js-template-petr)
 
 - Works on [p5.js instance mode](https://github.com/processing/p5.js/wiki/Global-and-instance-mode).
-    - So you don't have to use ESLint config specific to p5.js any more, because using [@types/p5](https://www.npmjs.com/package/@types/p5) is enough. However, in case [@types/p5](https://www.npmjs.com/package/@types/p5) is not up to date, sometimes you might have to escape some `p5` methods (which lack correct type declarations) with `any`.
+    - So you don't have to use ESLint config specific to p5.js any more.
 - Minifies the output code using [terser](https://terser.org/).
-- Maybe some other trivial changes.
+- In `index.html`,
+    - `defer` attribute is added in `<script>` tags.
+    - loads the minified edition of p5.js, which also disables the p5.js Friendly Error System.
+- Uses [npm-run-all](https://www.npmjs.com/package/npm-run-all) to make the build script in `package.json` simpler to write.
