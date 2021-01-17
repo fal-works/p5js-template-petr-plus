@@ -15,7 +15,7 @@
   "private": true,
   "scripts": {
     "build": "run-s transpile bundle lint:dist format:dist minify",
-    "transpile": "tsc --skipLibCheck",
+    "transpile": "tsc",
     "bundle": "rollup --config",
     "lint:dist": "eslint --fix dist/script.js",
     "format:dist": "prettier --write dist/script.js",
