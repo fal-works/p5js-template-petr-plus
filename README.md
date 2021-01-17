@@ -16,4 +16,3 @@ See also [other templates](https://fal-works.github.io/p5js-templates/).
 - In `index.html`,
     - `defer` attribute is added in `<script>` tags.
     - loads the minified edition of p5.js, which also disables the p5.js Friendly Error System.
-- Uses [npm-run-all](https://www.npmjs.com/package/npm-run-all) to make the build script in `package.json` simpler to write.
