@@ -2,9 +2,6 @@
   "ignorePatterns": ["/tsc-out/", "/dist/"],
 
   // config common to all
-  "parserOptions": {
-    "sourceType": "module"
-  },
   "env": {
     "es6": true
   },
@@ -13,6 +10,9 @@
     // config with basic rules
     {
       "files": ["src/**/*.ts", "rollup.config.js"],
+      "parserOptions": {
+        "sourceType": "module"
+      },
       "extends": [
         // basic recommended rules
         "eslint:recommended",
@@ -27,10 +27,9 @@
       "files": ["src/**/*.ts"],
       "plugins": ["@typescript-eslint"],
       "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaVersion": 6
+      "env": {
+        "browser": true
       },
-      "env": { "browser": true },
       "extends": [
         // recommended rules for TypeScript
         "plugin:@typescript-eslint/recommended",
@@ -47,7 +46,10 @@
     // config for Rollup
     {
       "files": ["rollup.config.js"],
-      "env": { "node": true }
+      "env": {
+        "es2017": true,
+        "node": true
+      }
     },
 
     // config just for pre-formatting purpose
