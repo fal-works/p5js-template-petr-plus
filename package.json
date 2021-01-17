@@ -14,10 +14,10 @@
   },
   "private": true,
   "scripts": {
-    "build": "run-s transpile bundle lint:dist format:dist minify",
+    "build": "run-s transpile bundle format:dist minify",
     "transpile": "tsc",
     "bundle": "rollup --config",
-    "lint:dist": "eslint --fix --no-ignore dist/script.js",
+    "preformat:dist": "eslint --fix --no-ignore dist/script.js",
     "format:dist": "prettier --write dist/script.js",
     "minify": "terser dist/script.js --output dist/script.min.js --compress --mangle"
   }
