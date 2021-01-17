@@ -8,7 +8,13 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": [
+    // basic recommended rules
+    "eslint:recommended",
+
+    // turn off rules that might conflict with Prettier
+    "prettier"
+  ],
 
   "overrides": [
     {
@@ -19,7 +25,10 @@
         "ecmaVersion": 6
       },
       "extends": [
+        // recommended rules for TypeScript
         "plugin:@typescript-eslint/recommended",
+
+        // turn off rules of @typescript-eslint that might conflict with Prettier
         "prettier/@typescript-eslint"
       ],
       "rules": {
