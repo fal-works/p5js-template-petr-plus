@@ -1,22 +1,28 @@
 {
-  "ignorePatterns": ["/tsc-out/", "*.min.js"],
+  "ignorePatterns": ["/tsc-out/", "/dist/"],
 
-  "env": {
-    "es6": true,
-    "browser": true
-  },
+  // config common to all
   "parserOptions": {
     "sourceType": "module"
   },
-  "extends": [
-    // basic recommended rules
-    "eslint:recommended",
-
-    // turn off rules that might conflict with Prettier
-    "prettier"
-  ],
+  "env": {
+    "es6": true
+  },
 
   "overrides": [
+    // config with basic rules
+    {
+      "files": ["src/**/*.ts", "rollup.config.js"],
+      "extends": [
+        // basic recommended rules
+        "eslint:recommended",
+
+        // turn off rules that might conflict with Prettier
+        "prettier"
+      ]
+    },
+
+    // config for TypeScript
     {
       "files": ["src/**/*.ts"],
       "plugins": ["@typescript-eslint"],
@@ -24,6 +30,7 @@
       "parserOptions": {
         "ecmaVersion": 6
       },
+      "env": { "browser": true },
       "extends": [
         // recommended rules for TypeScript
         "plugin:@typescript-eslint/recommended",
@@ -36,20 +43,21 @@
         "@typescript-eslint/no-explicit-any": "off" // this rule is a little too strict if using p5.js
       }
     },
-    {
-      "files": ["dist/*.js"],
-      "globals": {
-        "p5": "readonly"
-      },
-      "rules": {
-        "lines-around-comment": "error"
-      }
-    },
+
+    // config for Rollup
     {
       "files": ["rollup.config.js"],
-      "env": {
-        "node": true,
-        "browser": false
+      "env": { "node": true }
+    },
+
+    // config for distribution code, just for pre-formatting purpose
+    {
+      "files": ["dist/*.js"],
+      "rules": {
+        "lines-around-comment": [
+          "error",
+          { "beforeBlockComment": true, "beforeLineComment": true }
+        ]
       }
     }
   ]
