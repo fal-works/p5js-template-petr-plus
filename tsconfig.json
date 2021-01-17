@@ -11,12 +11,13 @@
     "module": "ESNext",
 
     // handling source modules
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
 
-    // checking syntax
+    // preventing mistakes
     "strict": true,
     "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
 
     // formatting
     "newLine": "LF"
