@@ -60,7 +60,14 @@
       "rules": {
         "lines-around-comment": [
           "error",
-          { "beforeBlockComment": true, "beforeLineComment": true }
+          {
+            "beforeBlockComment": true,
+            "beforeLineComment": true,
+            "allowBlockStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true,
+            "allowClassStart": true
+          }
         ]
       }
     }
