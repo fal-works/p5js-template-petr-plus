@@ -24,7 +24,7 @@
       ]
     },
 
-    // config for TypeScript
+    // config for source code in TypeScript
     {
       "files": ["src/**/*.ts"],
       "plugins": ["@typescript-eslint"],
